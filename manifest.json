@@ -1,0 +1,19 @@
+{
+
+  "description": "Go away Elon.",
+  "manifest_version": 2,
+  "name": "AntiTwitter",
+  "version": "1.0",
+  "homepage_url": "https://github.com/ethrythedev/AntiTwitter",
+  "icons": {
+    "48": "img/nobird48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*"],
+      "js": ["nobird.js"]
+    }
+  ]
+
+}
